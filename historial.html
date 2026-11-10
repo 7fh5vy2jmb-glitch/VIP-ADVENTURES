@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Historial de compras | VIP Adventour</title>
+<meta name="description" content="Tus reservas y compras en VIP Adventour.">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/png" href="logo.png">
+<script src="app.js" defer></script>
+</head>
+<body data-page="historial">
+<header class="top"><div class="wrap"></div></header>
+<main class="wrap">
+<h1>Historial de compras</h1>
+<section class="cliente" id="cliente"></section>
+<div class="scroll"><table><caption class="foot" style="text-align:left;border:0;padding:0 0 8px">Compras realizadas</caption>
+<thead><tr><th>Folio</th><th>Compra</th><th>Boletos</th><th>Cantidad</th><th>Total</th><th>Estado</th></tr></thead>
+<tbody id="filas"></tbody></table></div>
+<p class="total" id="total"></p>
+<button class="btn sec" id="borrar" type="button">Borrar historial</button>
+</main>
+<footer class="wrap foot">VIP Adventour. Tours y aventuras en la bahía.</footer>
+</body>
+</html>

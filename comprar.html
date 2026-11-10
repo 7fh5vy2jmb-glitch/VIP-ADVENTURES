@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Comprar | VIP Adventour</title>
+<meta name="description" content="Compra tu tour con VIP Adventour: elige servicio, fecha y personas, y recibe tu folio.">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/png" href="logo.png">
+<script src="app.js" defer></script>
+</head>
+<body data-page="comprar">
+<header class="top"><div class="wrap"></div></header>
+<main class="wrap">
+<h1>Comprar</h1>
+<p>Elige uno o varios boletos, con su fecha y cuántos van. Al final recibes tu folio y comprobante.</p>
+<div id="compraBox" class="compra">
+<form id="compraForm" novalidate>
+<fieldset><legend>1. Tus boletos</legend>
+<p class="nota">Cada boleto puede ser de un tour y un paquete distinto, con su propia fecha y cantidad.</p>
+<div id="lineas"></div>
+<div><button class="btn sec" type="button" id="agregar">+ Agregar otro boleto</button></div>
+</fieldset>
+<fieldset><legend>2. Tus datos</legend>
+<label>Nombre completo<input name="nombre" required maxlength="100" autocomplete="name"></label>
+<label>Correo de tu cuenta<input name="correo" type="email" required maxlength="120" autocomplete="email" readonly></label>
+<label>Teléfono<input name="telefono" type="tel" required maxlength="30" autocomplete="tel"></label>
+</fieldset>
+<fieldset><legend>3. Pago y notas</legend>
+<label class="op"><input type="radio" name="pago" value="Efectivo al abordar" checked> Efectivo al abordar</label>
+<label class="op"><input type="radio" name="pago" value="Transferencia bancaria"> Transferencia bancaria</label>
+<label class="op"><input type="radio" name="pago" value="Tarjeta (enlace de pago)"> Tarjeta, con enlace de pago</label>
+<p class="nota">Aquí solo registras tu pedido. El cobro lo coordinas directamente con la agencia.</p>
+<label>Notas<textarea name="notas" rows="3" maxlength="300" placeholder="Hotel de recogida, alergias, celebración..."></textarea></label>
+<label class="op"><input type="checkbox" name="acepto"> Confirmo que mis datos son correctos y que la barra libre es solo para mayores de 18 años.</label>
+</fieldset>
+<p class="nota">Al confirmar, tu pedido (nombre, correo, teléfono y datos del tour) se envía a la agencia.</p>
+<p class="msg" id="mensaje" aria-live="polite"></p>
+<button class="btn" type="submit">Confirmar compra</button>
+</form>
+<aside class="resumen" aria-live="polite"><h2>Tu resumen</h2><div id="res"></div></aside>
+</div>
+<section id="listo" hidden></section>
+</main>
+<footer class="wrap foot">VIP Adventour. Tours y aventuras en la bahía.</footer>
+</body>
+</html>

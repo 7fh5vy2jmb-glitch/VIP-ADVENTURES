@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="google-site-verification" content="k27qGfS7B06RJLgZXD_YC1m40kfsH3j2cBaO39rdG4Q" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>VIP Adventour | Tours en la bahía</title>
+<meta name="description" content="Tours en lancha, playas y recorridos todo terreno. Experiencias personalizadas con VIP Adventour.">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/png" href="logo.png">
+<script src="app.js" defer></script>
+<script src="inmersivo.js" defer></script>
+</head>
+<body data-page="index">
+<header class="top"><div class="wrap"></div></header>
+<main>
+<section class="hv" aria-label="Inicio">
+  <div class="giant" aria-hidden="true">VIP</div>
+  <div class="imwrap" style="position:relative;z-index:2">
+    <div class="orbstage">
+      <span class="fl">Snorkel</span><span class="fl">Kayak</span><span class="fl">ATV · RZR</span><span class="fl">Barra libre</span><span class="fl">Paddle</span>
+      <div class="orb" id="orb"><img src="logo.png" alt="Logo de VIP Adventour, Travel Agency &amp; Tours" width="337" height="337"></div>
+    </div>
+    <div class="hcopy">
+      <p class="bubble" aria-live="polite"><span id="bt">¿Eres visitante? <b>Tu día en la bahía</b> empieza aquí.</span><i></i></p>
+      <h1 class="htitle">Un día en la bahía, <em>sin prisas.</em></h1>
+      <div class="hcta"><a class="btn" href="#tours">Ver tours</a><a class="btn sec" href="contacto.html">Contáctanos</a></div>
+    </div>
+  </div>
+  <span class="scrollhint mono">Scroll ↓ Puerto Vallarta</span>
+</section>
+
+<section class="ink" id="ink" aria-label="Presentación">
+  <svg class="splat" viewBox="0 0 1400 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <defs><filter id="rough" x="-20%" y="-20%" width="140%" height="140%"><feTurbulence type="fractalNoise" baseFrequency=".012 .02" numOctaves="4" seed="7" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="130"/></filter></defs>
+    <g filter="url(#rough)" fill="#06141c"><circle id="b1" cx="1050" cy="250" r="10"/><circle id="b2" cx="260" cy="680" r="10"/><circle id="b3" cx="760" cy="520" r="10"/><circle id="b4" cx="1260" cy="760" r="10"/><circle id="b5" cx="140" cy="140" r="10"/></g>
+  </svg>
+  <div class="imwrap">
+    <p class="kicker mono">Tours y aventuras · Puerto Vallarta</p>
+    <h2 class="big" id="big"><span>Nada como</span><span>un día en</span><span>la bahía</span></h2>
+    <p class="lede">En VIP Adventour armamos experiencias únicas y personalizadas: arcos de piedra en el mar, playas de agua cristalina y recorridos todo terreno. <strong>Tú eliges la aventura</strong>, nosotros cuidamos cada detalle.</p>
+  </div>
+</section>
+
+<section class="show" id="tours" aria-label="Tours destacados">
+  <div class="pin" id="pin">
+    <div class="bar"></div>
+    <div class="bgs" id="bgs"></div>
+    <div class="head mono"><span>Tours destacados</span><span id="count"></span></div>
+    <div class="cars" id="cars"></div>
+    <div class="floor"></div>
+    <div class="info">
+      <div class="swap" id="txt"><h3 id="tt"></h3><p id="td"></p></div>
+      <div class="meta swap" id="mt">
+        <div class="tprice" id="tp"></div>
+        <a class="btn" id="tb" href="comprar.html">Comprar este tour</a>
+        <div class="dots" id="dots" role="group" aria-label="Elegir tour"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="marqwrap" aria-hidden="true"><div class="marq"><div id="mq"></div></div></div>
+
+<section class="group" aria-label="Precio de grupo">
+  <div class="imwrap gcols">
+    <div>
+      <p class="mono" style="color:var(--laguna);margin:0 0 18px">Viaja acompañado</p>
+      <h2>Desde 5 personas <em>pagas menos</em></h2>
+      <p class="lead" id="glead"></p>
+    </div>
+    <div class="gcalc">
+      <label class="mono" for="n">Personas en tu grupo: <span id="nv">2</span></label>
+      <div class="people" id="people" aria-hidden="true"></div>
+      <input type="range" id="n" min="1" max="10" value="2">
+      <div class="grow"><div class="pp" id="pp"></div><div class="tot" id="tot"></div></div>
+      <span class="badge" id="bd"></span>
+      <small id="gnote"></small>
+      <p style="margin:18px 0 0"><a class="btn" href="servicios.html">Elegir mi tour</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="cta" aria-label="Contacto">
+  <div class="imwrap">
+    <h2>Reserva<span>tu</span><span>aventura</span></h2>
+    <div class="actions">
+      <a class="btn" href="comprar.html">Comprar en línea</a>
+      <a class="btn sec" href="contacto.html">Contacto y mapa</a>
+    </div>
+    <div class="cgrid">
+      <div class="card"><span class="mono">Teléfono</span><p id="c1"><a href="tel:+523221513582">+52 322 151 3582</a></p><button class="copy" data-c="c1" type="button">Copiar</button></div>
+      <div class="card"><span class="mono">Correo</span><p id="c2"><a href="mailto:vipaventours@gmail.com">vipaventours@gmail.com</a></p><button class="copy" data-c="c2" type="button">Copiar</button></div>
+      <div class="card"><span class="mono">Punto de encuentro</span><p>Puerto Mágico (Terminal Marítima), Heroica Escuela Naval Militar 9, Marina Vallarta, Puerto Vallarta, Jalisco</p></div>
+      <div class="card"><span class="mono">Horario de atención</span><p>Lunes a viernes, de 9:00 a 18:00</p></div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="wrap foot">VIP Adventour. Tours y aventuras en la bahía.</footer>
+</body>
+</html>

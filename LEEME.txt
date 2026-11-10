@@ -1,0 +1,27 @@
+VIP ADVENTOUR - SITIO CON PHP Y BASE DE DATOS
+=============================================
+
+Necesitas un hosting con PHP 7.4 o superior y una base de datos MySQL/MariaDB
+(casi todos los hostings compartidos lo traen). No funciona en hostings solo
+estáticos (GitHub Pages, Netlify...).
+
+INSTALACIÓN (una sola vez)
+1. En tu hosting crea una base de datos MySQL y anota: servidor, nombre, usuario y contraseña.
+2. Abre config.php y llena DB_HOST, DB_NOMBRE, DB_USUARIO y DB_CLAVE.
+   Cambia también INSTALAR_TOKEN por una frase larga que solo tú sepas.
+3. Sube TODOS los archivos juntos a la carpeta pública del sitio (sin subcarpetas).
+4. Abre https://tudominio.com/instalar.php, escribe tu INSTALAR_TOKEN y elige la
+   contraseña del panel de administración (mínimo 8 caracteres).
+5. Cuando diga "Listo", BORRA instalar.php del servidor.
+6. Entra a acceso.html con tu nueva contraseña.
+
+NOTAS
+- Usa https. Las sesiones y contraseñas viajan por la red.
+- Las contraseñas de clientes y de administración se guardan cifradas (bcrypt).
+- Los precios de cada pedido los calcula el servidor, no el navegador.
+- Si "Borrar historial" lo usa un cliente, solo se le oculta a él: la agencia conserva el pedido.
+- Nginx ignora .htaccess. Con Nginx bloquea tú el acceso a config.php, db.php y a cualquier
+  archivo .sqlite, o usa MySQL (que no deja archivos dentro del sitio).
+- Opcional: DB_TIPO = 'sqlite' guarda todo en un archivo, sin servidor de base de datos.
+  Pon el archivo fuera de la carpeta pública (DB_SQLITE en config.php).
+- Respaldo: exporta la base de datos desde phpMyAdmin de vez en cuando.

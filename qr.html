@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Código QR | VIP Adventour</title>
+<meta name="description" content="Genera el código QR de VIP Adventour.">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/png" href="logo.png">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" defer></script>
+<script src="app.js" defer></script>
+</head>
+<body data-page="qr">
+<header class="top"><div class="wrap"></div></header>
+<main class="wrap">
+<h1>Código QR</h1>
+<p>Un solo código que lleva a una página con dos opciones: visitar el sitio web e ir al local. Escribe aquí la dirección final de tu sitio.</p>
+<form class="grid" id="qrForm"><label>Dirección de la página de enlaces<input type="url" id="url" required placeholder="https://tudominio.com/enlaces.html"></label>
+<div><button class="btn" type="submit">Generar QR</button></div>
+<p class="msg" id="mensaje" aria-live="polite"></p></form>
+<div class="qrcard" id="qrcard" hidden><div id="qrbox"></div><p>Escanea para ver nuestros tours y llegar al local</p></div>
+<div class="acciones" id="qracc" hidden><button class="btn" id="descargar" type="button">Descargar imagen PNG</button><button class="btn sec" id="imprimir" type="button">Imprimir</button></div>
+</main>
+<footer class="wrap foot">VIP Adventour. Tours y aventuras en la bahía.</footer>
+</body>
+</html>

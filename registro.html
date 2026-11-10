@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mi cuenta | VIP Adventour</title>
+<meta name="description" content="Crea tu cuenta o inicia sesión para reservar tus tours con VIP Adventour.">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/png" href="logo.png">
+<script src="app.js" defer></script>
+</head>
+<body data-page="registro">
+<header class="top"><div class="wrap"></div></header>
+<main class="wrap">
+<h1>Mi cuenta</h1>
+<section id="sinSesion">
+<div class="chips" id="tabs" role="group" aria-label="Cuenta"><button class="chip" type="button" data-t="nueva" aria-pressed="true">Crear cuenta</button><button class="chip" type="button" data-t="entrar" aria-pressed="false">Ya tengo cuenta</button></div>
+<form class="grid" id="registroForm" style="margin-top:20px">
+<label>Nombre completo<input name="nombre" required maxlength="100" autocomplete="name"></label>
+<label>Documento<input name="documento" required maxlength="30"></label>
+<label>Correo electrónico<input name="correo" type="email" required maxlength="120" autocomplete="email"></label>
+<label>Teléfono<input name="telefono" type="tel" maxlength="30" autocomplete="tel"></label>
+<label>Contraseña (mínimo 6 caracteres)<input name="clave" type="password" required minlength="6" maxlength="60" autocomplete="new-password"></label>
+<div><button class="btn" type="submit">Crear mi cuenta</button></div>
+<p class="msg" id="mensaje" aria-live="polite"></p>
+</form>
+<form class="grid" id="loginForm" style="margin-top:20px" hidden>
+<label>Correo electrónico<input name="correo" type="email" required autocomplete="email"></label>
+<label>Contraseña<input name="clave" type="password" required autocomplete="current-password"></label>
+<div><button class="btn" type="submit">Entrar</button></div>
+<p class="msg" id="mensaje2" aria-live="polite"></p>
+</form>
+<p class="nota" style="margin-top:12px">Con tu cuenta ves solo tus propias compras. Al registrarte, tus datos (sin la contraseña) se envían a la agencia.</p>
+</section>
+<section id="conSesion" hidden>
+<div class="cliente" id="cliente"></div>
+<div class="acciones"><a class="btn" href="servicios.html">Elegir un tour</a><a class="btn sec" href="historial.html">Mi historial</a><button class="btn sec" id="salir" type="button">Cerrar sesión</button></div>
+</section>
+</main>
+<footer class="wrap foot">VIP Adventour. Tours y aventuras en la bahía.</footer>
+</body>
+</html>

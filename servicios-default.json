@@ -1,0 +1,84 @@
+[
+ {
+  "nombre": "Aquaventuras",
+  "unidad": "boleto",
+  "img": "aquaventuras.jpg",
+  "desc": "Parque acuático en Nuevo Vallarta con toboganes, piscinas, circuito de cuerdas, tirolesa y presentaciones con animales marinos. Se vende por boleto: elige tu paquete.",
+  "paquetes": [
+   {
+    "nombre": "Entrada general",
+    "desc": "Acceso al parque acuático y a sus toboganes.",
+    "precio": 0,
+    "grupo": 0
+   },
+   {
+    "nombre": "Entrada + encuentro con delfines",
+    "desc": "Acceso al parque y programa de encuentro con delfines.",
+    "precio": 0,
+    "grupo": 0
+   },
+   {
+    "nombre": "Entrada + nado con delfines",
+    "desc": "Acceso al parque y programa de nado con delfines.",
+    "precio": 0,
+    "grupo": 0
+   }
+  ]
+ },
+ {
+  "nombre": "Arcos, Madagascar y Ánimas",
+  "unidad": "persona",
+  "img": "arcos-madagascar-animas.jpg",
+  "desc": "Sales a las 12:00 desde Puerto Mágico y regresas a las 18:00. Recorres la bahía y paras en Los Arcos, enormes rocas dentro del mar, para tomar fotos. En la playa Madagascar haces snorkel, kayak y paddle. Después hay fruta y barra libre con tequila, ron, vodka, cerveza y bebidas mezcladas. Terminas en la playa Las Ánimas, de agua muy cristalina, entre dos horas y media y tres horas, con alimentos incluidos.",
+  "paquetes": [
+   {
+    "nombre": "Estándar",
+    "desc": "Recorrido completo con alimentos y barra libre incluidos.",
+    "precio": 0,
+    "grupo": 0
+   }
+  ]
+ },
+ {
+  "nombre": "Arcos, Ánimas y Quimixto",
+  "unidad": "persona",
+  "img": "arcos-animas-quimixto.jpg",
+  "desc": "Recorrido por Los Arcos y las playas Las Ánimas y Quimixto, con snorkel, kayak y paddleboard, peces de colores y aves marinas.",
+  "paquetes": [
+   {
+    "nombre": "Estándar",
+    "desc": "Recorrido por Los Arcos, Las Ánimas y Quimixto.",
+    "precio": 500,
+    "grupo": 400
+   }
+  ]
+ },
+ {
+  "nombre": "Yelapa y Majahuitas",
+  "unidad": "persona",
+  "img": "yelapa-majahuitas.jpeg",
+  "desc": "Naturaleza, playa y aventura en Cabo Corrientes. Incluye equipo de snorkel, kayaks y paddleboard, barra libre a bordo, comida (filete de pescado, pollo, alambre, hamburguesas, papas, fruta y bebidas) y transporte en lancha. Salidas todos los días.",
+  "paquetes": [
+   {
+    "nombre": "Estándar",
+    "desc": "Snorkel, kayaks, paddleboard, barra libre, comida y lancha.",
+    "precio": 500,
+    "grupo": 400
+   }
+  ]
+ },
+ {
+  "nombre": "ATV y RZR",
+  "unidad": "persona",
+  "img": "atv-rzr.jpeg",
+  "desc": "Aventura sin límites en ATV, RZR y UTV por rutas emocionantes y seguras, entre ríos y naturaleza. Incluye guías expertos y equipo de seguridad. Hay opciones para principiantes y avanzados.",
+  "paquetes": [
+   {
+    "nombre": "Estándar",
+    "desc": "Recorrido con guías expertos y equipo de seguridad.",
+    "precio": 500,
+    "grupo": 400
+   }
+  ]
+ }
+]
